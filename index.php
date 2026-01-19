@@ -1,11 +1,22 @@
-<?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
-?>
-Something is wrong with the XAMPP installation :-(
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pendaftaran Siswa Baru | SMK Coding</title>
+</head>
+
+<body>
+    <header>
+        <h3>Pendaftaran Siswa Baru</h3>
+        <h1>SMK Coding</h1>
+    </header>
+
+    <h4>Menu</h4>
+    <nav>
+        <ul>
+            <li><a href="form-daftar.php">Daftar Baru</a></li>
+            <li><a href="list-siswa.php">Pendaftar</a></li>
+        </ul>
+    </nav>
+
+    </body>
+</html>
